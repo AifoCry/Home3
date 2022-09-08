@@ -1,23 +1,21 @@
 package services;
 
-import io.restassured.http.ContentType;
-import io.restassured.specification.RequestSpecification;
-import io.restassured.specification.ResponseSpecification;
-import org.apache.commons.lang3.StringUtils;
-
 import static io.restassured.RestAssured.given;
 
+import io.restassured.specification.RequestSpecification;
+
 abstract class PetStoreApiSpec {
-    private String getBaseUrl(){
-        return System.getProperty("base.url");
-    }
-    protected RequestSpecification requestSpecification;
+  private String getBaseUrl() {
+    return System.getProperty("base.url");
+  }
+
+  protected RequestSpecification requestSpecification;
 
 
-    public PetStoreApiSpec() {
-        requestSpecification = given()
-                .baseUri(getBaseUrl())
-                .basePath("/pet");
-    }
+  public PetStoreApiSpec() {
+    requestSpecification = given()
+        .baseUri(getBaseUrl())
+        .basePath("/pet");
+  }
 
 }

@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @JsonSerialize
-public class TagsItem{
-	private String name;
-	private int id;
+public class TagsItem {
+  private String name;
+  private int id;
 }

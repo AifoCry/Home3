@@ -14,10 +14,10 @@ import java.util.List;
 @NoArgsConstructor
 @JsonSerialize
 public class PetObject {
-    private List<String> photoUrls;
-    private String name;
-    private int id;
-    private Category category;
-    private List<TagsItem> tags;
-    private String status;
+  private List<String> photoUrls;
+  private String name;
+  private int id;
+  private Category category;
+  private List<TagsItem> tags;
+  private String status;
 }
